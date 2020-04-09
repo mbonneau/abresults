@@ -1,0 +1,205 @@
+{
+   "agent": "RFC-permessage-dev",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 269,
+   "closedByMe": true,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 256.",
+   "droppedByMe": false,
+   "duration": 349,
+   "expectation": "Receive echo'ed binary message (with payload as sent).",
+   "expected": {},
+   "expectedClose": {
+      "closeCode": [
+         1000
+      ],
+      "closedByMe": true,
+      "requireClean": true
+   },
+   "failedByMe": false,
+   "httpRequest": "GET / HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.1-0.10.9\r\nHost: 192.168.101.183:7000\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: gpOoh/oRcLOAX804X+Ee2g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: OtiKQoGjqLuvp8bFpZltg7P9Zg4=\r\nX-Powered-By: Ratchet\r\nContent-Length: 0\r\n\r\n",
+   "id": "9.4.2",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": 1000,
+   "remoteCloseReason": null,
+   "reportCompressionRatio": false,
+   "reportTime": true,
+   "result": "Received binary message of length 4194304.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "2": 1,
+      "8": 1
+   },
+   "rxOctetStats": {
+      "4": 1,
+      "171": 1,
+      "432": 1,
+      "892": 11,
+      "1420": 5,
+      "1460": 1,
+      "2352": 2,
+      "2512": 1,
+      "2840": 5,
+      "2920": 1,
+      "3812": 1,
+      "3972": 1,
+      "4260": 4,
+      "4380": 3,
+      "5680": 2,
+      "5840": 3,
+      "5920": 1,
+      "6732": 1,
+      "6772": 1,
+      "6852": 1,
+      "7100": 3,
+      "7300": 6,
+      "7795": 1,
+      "8192": 25,
+      "8392": 1,
+      "8520": 6,
+      "9084": 7,
+      "9652": 1,
+      "9940": 8,
+      "10544": 1,
+      "11112": 3,
+      "11360": 1,
+      "11520": 1,
+      "12572": 3,
+      "12780": 7,
+      "14200": 4,
+      "14636": 1,
+      "15475": 1,
+      "15492": 6,
+      "15620": 4,
+      "16060": 1,
+      "16384": 7,
+      "16868": 1,
+      "17040": 2,
+      "17276": 1,
+      "19032": 1,
+      "19308": 1,
+      "19880": 6,
+      "21300": 7,
+      "22224": 1,
+      "22720": 4,
+      "22792": 1,
+      "23684": 1,
+      "24372": 1,
+      "25560": 2,
+      "26980": 2,
+      "28100": 1,
+      "28400": 3,
+      "28615": 1,
+      "29820": 4,
+      "30032": 1,
+      "30852": 1,
+      "31240": 2,
+      "32660": 3,
+      "32984": 1,
+      "34080": 5,
+      "34552": 1,
+      "35500": 1,
+      "36920": 4,
+      "39208": 1,
+      "39760": 2,
+      "40961": 1,
+      "41180": 1,
+      "42600": 1,
+      "44020": 1,
+      "46860": 1,
+      "49700": 1,
+      "52540": 2,
+      "53960": 1,
+      "55380": 1,
+      "58220": 1,
+      "62480": 2,
+      "63900": 1,
+      "65320": 9
+   },
+   "started": "2020-04-09T17:39:27.459Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "0": 16384,
+      "2": 1,
+      "8": 1
+   },
+   "txOctetStats": {
+      "6": 1,
+      "8": 1,
+      "246": 1,
+      "264": 16384
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            246,
+            "474554202f20485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f302e382e312d302e31302e390d0a486f7374 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            171,
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a557067726164653a20776562736f636b65740d0a436f6e6e656374696f6e ..."
+         ]
+      ],
+      [
+         "TI",
+         100
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "b8c5e78f",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "8882b8c5e78fbb2d"
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            4,
+            "880203e8"
+         ]
+      ],
+      [
+         "RF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ]
+   ]
+}

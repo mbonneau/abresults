@@ -1,0 +1,217 @@
+{
+   "agent": "Ratchet-0.4.2",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 272,
+   "closedByMe": true,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 16k.",
+   "droppedByMe": false,
+   "duration": 134,
+   "expectation": "Receive echo'ed binary message (with payload as sent).",
+   "expected": {},
+   "expectedClose": {
+      "closeCode": [
+         1000
+      ],
+      "closedByMe": true,
+      "requireClean": true
+   },
+   "failedByMe": false,
+   "httpRequest": "GET / HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.1-0.10.9\r\nHost: 192.168.101.183:7001\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 3ZrSa7pYfDScFCL89LRwog==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: KbcXXxmJ+o4OL2avLeBW0ON1/6U=\r\nX-Powered-By: Ratchet/0.4.1\r\n\r\n",
+   "id": "9.4.5",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": 1000,
+   "remoteCloseReason": null,
+   "reportCompressionRatio": false,
+   "reportTime": true,
+   "result": "Received binary message of length 4194304.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "0": 256,
+      "2": 1,
+      "8": 1
+   },
+   "rxOctetStats": {
+      "4": 1,
+      "158": 1,
+      "892": 25,
+      "1092": 1,
+      "1420": 5,
+      "1460": 3,
+      "2312": 1,
+      "2352": 2,
+      "2512": 1,
+      "2636": 1,
+      "2840": 1,
+      "2920": 6,
+      "3040": 1,
+      "3812": 2,
+      "3932": 1,
+      "4260": 3,
+      "4380": 2,
+      "4696": 1,
+      "4912": 1,
+      "5024": 1,
+      "5152": 1,
+      "5272": 4,
+      "5680": 4,
+      "5800": 1,
+      "5840": 3,
+      "5880": 1,
+      "6364": 1,
+      "6732": 1,
+      "6772": 1,
+      "7100": 5,
+      "7300": 11,
+      "7752": 1,
+      "8072": 1,
+      "8192": 50,
+      "8392": 1,
+      "8520": 2,
+      "8840": 1,
+      "9084": 4,
+      "9652": 2,
+      "9692": 2,
+      "9940": 2,
+      "10376": 1,
+      "10604": 1,
+      "11112": 2,
+      "11232": 2,
+      "11360": 5,
+      "11760": 1,
+      "11904": 1,
+      "12452": 1,
+      "12572": 5,
+      "13316": 1,
+      "14032": 2,
+      "14200": 1,
+      "14964": 2,
+      "15292": 1,
+      "15492": 12,
+      "15620": 2,
+      "16032": 1,
+      "16384": 10,
+      "16868": 1,
+      "17040": 1,
+      "18460": 1,
+      "19880": 2,
+      "20196": 1,
+      "21300": 3,
+      "22720": 4,
+      "24140": 2,
+      "25560": 3,
+      "26980": 3,
+      "29367": 1,
+      "29820": 1,
+      "32848": 2,
+      "34080": 1,
+      "35500": 2,
+      "35643": 1,
+      "36920": 2,
+      "37392": 1,
+      "38340": 5,
+      "39760": 2,
+      "40312": 2,
+      "41180": 2,
+      "41772": 1,
+      "42600": 1,
+      "43232": 1,
+      "44020": 1,
+      "45440": 1,
+      "48280": 2,
+      "48828": 1,
+      "49700": 2,
+      "52540": 1,
+      "53960": 2,
+      "55380": 2,
+      "55480": 1,
+      "59640": 1,
+      "65320": 7
+   },
+   "started": "2020-04-09T17:39:56.178Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "0": 256,
+      "2": 1,
+      "8": 1
+   },
+   "txOctetStats": {
+      "6": 1,
+      "8": 1,
+      "246": 1,
+      "16392": 256
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            246,
+            "474554202f20485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f302e382e312d302e31302e390d0a486f7374 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            158,
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a557067726164653a20776562736f636b65740d0a436f6e6e656374696f6e ..."
+         ]
+      ],
+      [
+         "TI",
+         100
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "684c8885",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "8882684c88856ba4"
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            4,
+            "880203e8"
+         ]
+      ],
+      [
+         "RF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ]
+   ]
+}
