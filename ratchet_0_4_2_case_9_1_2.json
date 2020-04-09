@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message message with payload of length 256 * 2**10 (256k).",
    "droppedByMe": false,
-   "duration": 13,
+   "duration": 15,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET / HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.1-0.10.9\r\nHost: 192.168.101.183:7001\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: HZj5+c3PzbpiL/21WMFcLg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: QY6bDZJJgNHQ97c/6EOZbhBwRAg=\r\nX-Powered-By: Ratchet/0.4.1\r\n\r\n",
+   "httpRequest": "GET / HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.1-0.10.9\r\nHost: 192.168.101.183:7001\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: BXFnH+kgMf4a+WYVlL7T2Q==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: LNR/tIRJaVWGpBSDWstUw06Y7Po=\r\nX-Powered-By: Ratchet/0.4.1\r\n\r\n",
    "id": "9.1.2",
    "isServer": false,
    "localCloseCode": 1000,
@@ -38,12 +38,26 @@
    },
    "rxOctetStats": {
       "4": 1,
+      "10": 1,
       "158": 1,
-      "15292": 1,
-      "50254": 1,
-      "65536": 3
+      "892": 4,
+      "2352": 1,
+      "3812": 1,
+      "4380": 1,
+      "4420": 1,
+      "5352": 1,
+      "6444": 1,
+      "7300": 1,
+      "8192": 8,
+      "9612": 2,
+      "9940": 1,
+      "11032": 1,
+      "11112": 1,
+      "11152": 1,
+      "15492": 2,
+      "16384": 4
    },
-   "started": "2020-04-09T17:39:46.188Z",
+   "started": "2020-04-09T18:03:21.097Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -88,7 +102,7 @@
          8,
          true,
          0,
-         "5fb63b4a",
+         "310ea173",
          null,
          null,
          false
@@ -97,7 +111,7 @@
          "TO",
          [
             8,
-            "88825fb63b4a5c5e"
+            "8882310ea17332e6"
          ],
          false
       ],

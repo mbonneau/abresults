@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 1000 binary messages of payload size 8192 to measure implementation/network RTT (round trip time) / latency.",
    "droppedByMe": false,
-   "duration": 950,
+   "duration": 1035,
    "expectation": "Receive echo'ed binary messages (with payload as sent). Timeout case after 480 secs.",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET / HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.1-0.10.9\r\nHost: 192.168.101.183:7000\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: YWqrLVOxfsDp3CVEvWutPA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Emfmo+9yQjUN41qjkzOU0ByyYCI=\r\nX-Powered-By: Ratchet\r\nContent-Length: 0\r\n\r\n",
+   "httpRequest": "GET / HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.1-0.10.9\r\nHost: 192.168.101.183:7000\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: G88/ILyPNkkFdh4dl405mg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: cd/G4y0CyeGUZ9JyytMV39A0TTo=\r\nX-Powered-By: Ratchet\r\nContent-Length: 0\r\n\r\n",
    "id": "9.8.7",
    "isServer": false,
    "localCloseCode": 1000,
@@ -37,28 +37,24 @@
       "8": 1
    },
    "rxOctetStats": {
-      "4": 292,
+      "4": 213,
       "171": 1,
-      "896": 3,
-      "1016": 1,
-      "1096": 10,
-      "1420": 5,
-      "2356": 1,
-      "2516": 10,
-      "2840": 8,
-      "3936": 11,
-      "4260": 11,
-      "5356": 8,
-      "5680": 10,
-      "5840": 1,
-      "6776": 5,
-      "7100": 10,
-      "7180": 1,
-      "7300": 3,
-      "8192": 291,
-      "8196": 660
+      "896": 15,
+      "976": 1,
+      "1420": 1,
+      "2356": 6,
+      "2436": 1,
+      "3816": 8,
+      "4380": 8,
+      "5760": 1,
+      "5840": 6,
+      "6776": 1,
+      "7220": 1,
+      "7300": 15,
+      "8192": 212,
+      "8196": 756
    },
-   "started": "2020-04-09T17:39:45.173Z",
+   "started": "2020-04-09T17:47:34.472Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1000,
@@ -111,7 +107,7 @@
          8,
          true,
          0,
-         "d8b39016",
+         "ba1aa8eb",
          null,
          null,
          false
@@ -120,7 +116,7 @@
          "TO",
          [
             8,
-            "8882d8b39016db5b"
+            "8882ba1aa8ebb9f2"
          ],
          false
       ],

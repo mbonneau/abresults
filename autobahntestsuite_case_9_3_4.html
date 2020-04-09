@@ -202,7 +202,7 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
       <center><a href="http://autobahn.ws/testsuite" title="Autobahn WebSocket Testsuite"><img src="http://autobahn.ws/static/img/ws_protocol_test_report.png"          border="0" width="820" height="46" alt="Autobahn WebSocket Testsuite Report"></img></a></center>
       <center><a href="http://autobahn.ws"           title="Autobahn WebSocket">          <img src="http://autobahn.ws/static/img/ws_protocol_test_report_autobahn.png" border="0" width="300" height="68" alt="Autobahn WebSocket">                 </img></a></center>
       <br/>
-      <p class="case case_ok">AutobahnTestSuite - <span style="font-size: 1.3em;"><b>Case 9.3.4</b></span> : Pass - <span style="font-size: 0.9em;"><b>116</b> ms @ 2020-04-09T17:40:20.053Z</a></p>
+      <p class="case case_ok">AutobahnTestSuite - <span style="font-size: 1.3em;"><b>Case 9.3.4</b></span> : Pass - <span style="font-size: 0.9em;"><b>115</b> ms @ 2020-04-09T18:04:00.838Z</a></p>
       <p class="case_text_block case_desc"><b>Case Description</b><br/><br/>Send fragmented text message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 4k.</p>
       <p class="case_text_block case_expect"><b>Case Expectation</b><br/><br/>Receive echo'ed text message (with payload as sent).</p>
 
@@ -221,14 +221,14 @@ Upgrade: WebSocket
 Connection: Upgrade
 Pragma: no-cache
 Cache-Control: no-cache
-Sec-WebSocket-Key: fjVJo8zJDAdjkSBuS/5qfg==
+Sec-WebSocket-Key: PYvP3N5hNkRzCfnD0QjFCg==
 Sec-WebSocket-Version: 13</pre>
       <pre class="http_dump">HTTP/1.1 101 Switching Protocols
 Server: AutobahnPython/0.10.9
 X-Powered-By: AutobahnPython/0.10.9
 Upgrade: WebSocket
 Connection: Upgrade
-Sec-WebSocket-Accept: bEeknTPHOC9klUCmyx4YFuEZtWs=</pre>
+Sec-WebSocket-Accept: eyFKG8imKwMnkmO1r8tVRIWMeiY=</pre>
       <br/><hr/>
       <h2>Closing Behavior</h2>
       <table>
@@ -253,54 +253,15 @@ Sec-WebSocket-Accept: bEeknTPHOC9klUCmyx4YFuEZtWs=</pre>
          <tr class="stats_header"><td>Chop Size</td><td>Count</td><td>Octets</td></tr>
          <tr class="stats_row"><td>4</td><td>1</td><td>4</td></tr>
          <tr class="stats_row"><td>197</td><td>1</td><td>197</td></tr>
-         <tr class="stats_row"><td>1420</td><td>4</td><td>5680</td></tr>
-         <tr class="stats_row"><td>2840</td><td>2</td><td>5680</td></tr>
-         <tr class="stats_row"><td>4260</td><td>3</td><td>12780</td></tr>
-         <tr class="stats_row"><td>5680</td><td>3</td><td>17040</td></tr>
-         <tr class="stats_row"><td>7100</td><td>5</td><td>35500</td></tr>
-         <tr class="stats_row"><td>7640</td><td>1</td><td>7640</td></tr>
-         <tr class="stats_row"><td>8520</td><td>3</td><td>25560</td></tr>
-         <tr class="stats_row"><td>9940</td><td>2</td><td>19880</td></tr>
-         <tr class="stats_row"><td>10860</td><td>1</td><td>10860</td></tr>
-         <tr class="stats_row"><td>11360</td><td>1</td><td>11360</td></tr>
-         <tr class="stats_row"><td>12780</td><td>1</td><td>12780</td></tr>
-         <tr class="stats_row"><td>14200</td><td>2</td><td>28400</td></tr>
-         <tr class="stats_row"><td>15620</td><td>1</td><td>15620</td></tr>
-         <tr class="stats_row"><td>16060</td><td>1</td><td>16060</td></tr>
-         <tr class="stats_row"><td>17040</td><td>1</td><td>17040</td></tr>
-         <tr class="stats_row"><td>18942</td><td>1</td><td>18942</td></tr>
-         <tr class="stats_row"><td>19880</td><td>1</td><td>19880</td></tr>
-         <tr class="stats_row"><td>21300</td><td>4</td><td>85200</td></tr>
-         <tr class="stats_row"><td>22720</td><td>3</td><td>68160</td></tr>
-         <tr class="stats_row"><td>24140</td><td>3</td><td>72420</td></tr>
          <tr class="stats_row"><td>25560</td><td>1</td><td>25560</td></tr>
-         <tr class="stats_row"><td>26332</td><td>1</td><td>26332</td></tr>
-         <tr class="stats_row"><td>28400</td><td>1</td><td>28400</td></tr>
-         <tr class="stats_row"><td>29200</td><td>1</td><td>29200</td></tr>
-         <tr class="stats_row"><td>29820</td><td>2</td><td>59640</td></tr>
-         <tr class="stats_row"><td>31240</td><td>4</td><td>124960</td></tr>
-         <tr class="stats_row"><td>34080</td><td>1</td><td>34080</td></tr>
-         <tr class="stats_row"><td>35500</td><td>2</td><td>71000</td></tr>
-         <tr class="stats_row"><td>36920</td><td>1</td><td>36920</td></tr>
-         <tr class="stats_row"><td>39760</td><td>1</td><td>39760</td></tr>
-         <tr class="stats_row"><td>41180</td><td>3</td><td>123540</td></tr>
-         <tr class="stats_row"><td>44020</td><td>2</td><td>88040</td></tr>
-         <tr class="stats_row"><td>45224</td><td>1</td><td>45224</td></tr>
-         <tr class="stats_row"><td>46860</td><td>1</td><td>46860</td></tr>
-         <tr class="stats_row"><td>48280</td><td>1</td><td>48280</td></tr>
+         <tr class="stats_row"><td>43502</td><td>1</td><td>43502</td></tr>
          <tr class="stats_row"><td>49700</td><td>1</td><td>49700</td></tr>
-         <tr class="stats_row"><td>51120</td><td>2</td><td>102240</td></tr>
-         <tr class="stats_row"><td>53960</td><td>1</td><td>53960</td></tr>
-         <tr class="stats_row"><td>55380</td><td>3</td><td>166140</td></tr>
-         <tr class="stats_row"><td>55664</td><td>1</td><td>55664</td></tr>
-         <tr class="stats_row"><td>56800</td><td>1</td><td>56800</td></tr>
-         <tr class="stats_row"><td>58220</td><td>3</td><td>174660</td></tr>
-         <tr class="stats_row"><td>59640</td><td>3</td><td>178920</td></tr>
-         <tr class="stats_row"><td>63556</td><td>1</td><td>63556</td></tr>
-         <tr class="stats_row"><td>63900</td><td>1</td><td>63900</td></tr>
-         <tr class="stats_row"><td>65320</td><td>28</td><td>1828960</td></tr>
-         <tr class="stats_row"><td>65536</td><td>1</td><td>65536</td></tr>
-         <tr class="stats_total"><td>Total</td><td>114</td><td>4194515</td></tr>
+         <tr class="stats_row"><td>53960</td><td>2</td><td>107920</td></tr>
+         <tr class="stats_row"><td>54580</td><td>1</td><td>54580</td></tr>
+         <tr class="stats_row"><td>55380</td><td>1</td><td>55380</td></tr>
+         <tr class="stats_row"><td>56584</td><td>1</td><td>56584</td></tr>
+         <tr class="stats_row"><td>65536</td><td>58</td><td>3801088</td></tr>
+         <tr class="stats_total"><td>Total</td><td>68</td><td>4194515</td></tr>
       </table>
       <h3>Octets Transmitted by Chop Size</h3>
       <table>
@@ -334,9 +295,9 @@ Sec-WebSocket-Accept: bEeknTPHOC9klUCmyx4YFuEZtWs=</pre>
          <pre class="wirelog_rx_octets">001 RX OCTETS: 485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a5365727665723a204175746f6261686e</pre>
          <pre class="wirelog_rx_octets">               507974686f6e2f302e31302e390d ...</pre>
          <pre class="wirelog_kill_after">002 CLOSE CONNECTION AFTER 100.000000 sec</pre>
-         <pre class="wirelog_tx_frame">003 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASK=70849dc7, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
+         <pre class="wirelog_tx_frame">003 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASK=01c12d4c, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
          <pre class="wirelog_tx_frame">               0x03e8</pre>
-         <pre class="wirelog_tx_octets">004 TX OCTETS: 888270849dc7736c</pre>
+         <pre class="wirelog_tx_octets">004 TX OCTETS: 888201c12d4c0229</pre>
          <pre class="wirelog_rx_octets">005 RX OCTETS: 880203e8</pre>
          <pre class="wirelog_rx_frame">006 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASKED=False, MASK=None</pre>
          <pre class="wirelog_rx_frame">               0x03e8</pre>

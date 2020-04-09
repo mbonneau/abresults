@@ -1,0 +1,121 @@
+{
+   "agent": "RFC-permessage-dev",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 222,
+   "closedByMe": true,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Send a close frame with invalid UTF8 payload",
+   "droppedByMe": false,
+   "duration": 1,
+   "expectation": "Clean close with protocol error or invalid utf8 code or dropped TCP.",
+   "expected": {
+      "OK": []
+   },
+   "expectedClose": {
+      "closeCode": [
+         1002,
+         1007
+      ],
+      "closedByMe": true,
+      "requireClean": false
+   },
+   "failedByMe": false,
+   "httpRequest": "GET / HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.1-0.10.9\r\nHost: 192.168.101.183:7000\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: i+KRM4szvt/MmHPrxG3dig==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: RxvpoBCq9zlM+cqKQZn0qr+WQfo=\r\nX-Powered-By: Ratchet\r\nContent-Length: 0\r\n\r\n",
+   "id": "7.5.1",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": "cebae1bdb9cf83cebcceb5eda080656469746564",
+   "received": [],
+   "remoteCloseCode": 1007,
+   "remoteCloseReason": "Ratchet detected an invalid UTF-8 payload in the close reason",
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "8": 1
+   },
+   "rxOctetStats": {
+      "65": 1,
+      "171": 1
+   },
+   "started": "2020-04-09T17:47:11.819Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "8": 1
+   },
+   "txOctetStats": {
+      "28": 1,
+      "246": 1
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            246,
+            "474554202f20485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f302e382e312d302e31302e390d0a486f7374 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            171,
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a557067726164653a20776562736f636b65740d0a436f6e6e656374696f6e ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            22,
+            "0x03e8cebae1bdb9cf83cebcceb5eda080656469746564"
+         ],
+         8,
+         true,
+         0,
+         "e7151618",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            28,
+            "8896e7151618e4fdd8a206a8afd764dbaad652f8b69882717f6c8271"
+         ],
+         false
+      ],
+      [
+         "KL",
+         1
+      ],
+      [
+         "RO",
+         [
+            65,
+            "883f03ef5261746368657420646574656374656420616e20696e76616c6964205554462d38207061796c6f616420696e2074686520636c6f736520726561736f ..."
+         ]
+      ],
+      [
+         "RF",
+         [
+            63,
+            "0x03ef5261746368657420646574656374656420616e20696e76616c6964205554462d38207061796c6f616420696e2074686520636c6f736520726561736f6e ..."
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ]
+   ]
+}

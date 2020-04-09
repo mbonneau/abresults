@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 1000 text messages of payload size 4096 to measure implementation/network RTT (round trip time) / latency.",
    "droppedByMe": false,
-   "duration": 704,
+   "duration": 736,
    "expectation": "Receive echo'ed text messages (with payload as sent). Timeout case after 480 secs.",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET / HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.1-0.10.9\r\nHost: 192.168.101.183:7002\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: vxdkRlMM17PB4i2LfpzZ6w==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnPython/0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Cd9WIl2NovS+czqglnFBDL9Q+Ks=\r\n\r\n",
+   "httpRequest": "GET / HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.1-0.10.9\r\nHost: 192.168.101.183:7002\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: hJyXXIdOLHHjzbonuKqo4Q==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnPython/0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: PO32xAeSm0mspprHc7gbSoiNS0E=\r\n\r\n",
    "id": "9.7.6",
    "isServer": false,
    "localCloseCode": 1000,
@@ -40,14 +40,16 @@
       "4": 1,
       "197": 1,
       "1180": 1,
-      "1260": 7,
-      "1420": 7,
-      "2680": 7,
-      "2840": 7,
+      "1260": 27,
+      "1420": 39,
+      "1460": 2,
+      "2640": 2,
+      "2680": 39,
+      "2840": 27,
       "2920": 1,
-      "4100": 985
+      "4100": 931
    },
-   "started": "2020-04-09T17:40:34.261Z",
+   "started": "2020-04-09T18:04:14.774Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1000,
@@ -100,7 +102,7 @@
          8,
          true,
          0,
-         "9962e11c",
+         "effc9332",
          null,
          null,
          false
@@ -109,7 +111,7 @@
          "TO",
          [
             8,
-            "88829962e11c9a8a"
+            "8882effc9332ec14"
          ],
          false
       ],

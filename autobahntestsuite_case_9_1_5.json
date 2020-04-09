@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message message with payload of length 8 * 2**20 (8M).",
    "droppedByMe": false,
-   "duration": 219,
+   "duration": 222,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET / HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.1-0.10.9\r\nHost: 192.168.101.183:7002\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 3eUHmUaUM3PXAQDnlew12A==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnPython/0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ly1YNysAe7UFfmUP51e+Q6pbMFc=\r\n\r\n",
+   "httpRequest": "GET / HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.1-0.10.9\r\nHost: 192.168.101.183:7002\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: +uTyiehIBgbsKgwLAlekkg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnPython/0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: j+b4p2QZCv9mZlf4nI1eTA89kOo=\r\n\r\n",
    "id": "9.1.5",
    "isServer": false,
    "localCloseCode": 1000,
@@ -39,35 +39,11 @@
    "rxOctetStats": {
       "4": 1,
       "197": 1,
-      "5680": 4,
-      "7100": 1,
-      "9940": 1,
-      "11360": 1,
-      "14200": 2,
-      "19880": 1,
-      "22720": 1,
-      "28400": 1,
-      "31240": 1,
-      "34080": 1,
-      "36920": 1,
-      "41088": 1,
-      "42600": 4,
-      "44020": 1,
-      "45440": 1,
-      "46860": 1,
-      "48738": 1,
-      "49700": 1,
-      "51120": 2,
-      "53960": 2,
-      "55380": 1,
-      "58220": 2,
-      "59640": 4,
-      "63016": 1,
-      "63900": 2,
-      "65320": 14,
-      "65536": 91
+      "25560": 1,
+      "39986": 1,
+      "65536": 127
    },
-   "started": "2020-04-09T17:40:16.395Z",
+   "started": "2020-04-09T18:03:57.252Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -112,7 +88,7 @@
          8,
          true,
          0,
-         "7ab1233c",
+         "830f2846",
          null,
          null,
          false
@@ -121,7 +97,7 @@
          "TO",
          [
             8,
-            "88827ab1233c7959"
+            "8882830f284680e7"
          ],
          false
       ],

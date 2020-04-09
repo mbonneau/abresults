@@ -1,0 +1,745 @@
+{
+   "agent": "RFC-permessage-dev",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 8,
+   "closedByMe": true,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Send text message message with payload of length 65536. Sent out data in chops of 997 octets.",
+   "droppedByMe": false,
+   "duration": 13,
+   "expectation": "Receive echo'ed text message (with payload as sent). Clean close with normal code.",
+   "expected": {
+      "OK": [
+         [
+            "message",
+            "**************************************************************** ...",
+            false
+         ]
+      ]
+   },
+   "expectedClose": {
+      "closeCode": [
+         1000
+      ],
+      "closedByMe": true,
+      "requireClean": true
+   },
+   "failedByMe": false,
+   "httpRequest": "GET / HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.8.1-0.10.9\r\nHost: 192.168.101.183:7000\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 1fJ6AWq1SlJ96EoVNjBc0A==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 701ZC0h7oxw/2KX/yTmaNlhYU8g=\r\nX-Powered-By: Ratchet\r\nContent-Length: 0\r\n\r\n",
+   "id": "1.1.8",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [
+      [
+         "message",
+         "**************************************************************** ...",
+         false
+      ]
+   ],
+   "remoteCloseCode": 1000,
+   "remoteCloseReason": null,
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "1": 1,
+      "8": 1
+   },
+   "rxOctetStats": {
+      "4": 1,
+      "171": 1,
+      "5906": 1,
+      "7100": 1,
+      "8520": 1,
+      "9940": 2,
+      "11360": 1,
+      "12780": 1
+   },
+   "started": "2020-04-09T17:47:00.909Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "1": 1,
+      "8": 1
+   },
+   "txOctetStats": {
+      "8": 1,
+      "246": 1,
+      "745": 1,
+      "997": 65
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            246,
+            "474554202f20485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f302e382e312d302e31302e390d0a486f7374 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            171,
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a557067726164653a20776562736f636b65740d0a436f6e6e656374696f6e ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            65536,
+            "**************************************************************** ..."
+         ],
+         1,
+         true,
+         0,
+         "94df0158",
+         null,
+         997,
+         false
+      ],
+      [
+         "TO",
+         [
+            997,
+            "81ff000000000001000094df0158bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "KL",
+         10
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "f52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72be ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            997,
+            "2b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef5 ..."
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            745,
+            "72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b72bef52b ..."
+         ],
+         true
+      ],
+      [
+         "RO",
+         [
+            9940,
+            "817f00000000000100002a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a ..."
+         ]
+      ],
+      [
+         "RO",
+         [
+            7100,
+            "2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a ..."
+         ]
+      ],
+      [
+         "RO",
+         [
+            8520,
+            "2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a ..."
+         ]
+      ],
+      [
+         "RO",
+         [
+            9940,
+            "2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a ..."
+         ]
+      ],
+      [
+         "RO",
+         [
+            11360,
+            "2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a ..."
+         ]
+      ],
+      [
+         "RO",
+         [
+            12780,
+            "2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a ..."
+         ]
+      ],
+      [
+         "RO",
+         [
+            5906,
+            "2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a ..."
+         ]
+      ],
+      [
+         "RF",
+         [
+            65536,
+            "**************************************************************** ..."
+         ],
+         1,
+         true,
+         0,
+         false,
+         null
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "11981ba9",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "888211981ba91270"
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            4,
+            "880203e8"
+         ]
+      ],
+      [
+         "RF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ]
+   ]
+}
